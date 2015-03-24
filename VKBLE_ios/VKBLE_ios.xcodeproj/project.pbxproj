@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88A373DD1AC1D0F800BB7E59 /* VKBLE_ios.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 88A373DC1AC1D0F800BB7E59 /* VKBLE_ios.h */; };
+		88A373DF1AC1D0F800BB7E59 /* VKBLE_ios.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A373DE1AC1D0F800BB7E59 /* VKBLE_ios.m */; };
+		88A373E51AC1D0F800BB7E59 /* libVKBLE_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A373D91AC1D0F800BB7E59 /* libVKBLE_ios.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88A373E61AC1D0F800BB7E59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88A373D11AC1D0F800BB7E59 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88A373D81AC1D0F800BB7E59;
+			remoteInfo = VKBLE_ios;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		88A373D71AC1D0F800BB7E59 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				88A373DD1AC1D0F800BB7E59 /* VKBLE_ios.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		88A373D91AC1D0F800BB7E59 /* libVKBLE_ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVKBLE_ios.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		88A373DC1AC1D0F800BB7E59 /* VKBLE_ios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VKBLE_ios.h; sourceTree = "<group>"; };
+		88A373DE1AC1D0F800BB7E59 /* VKBLE_ios.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VKBLE_ios.m; sourceTree = "<group>"; };
+		88A373E41AC1D0F800BB7E59 /* VKBLE_iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VKBLE_iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88A373EA1AC1D0F800BB7E59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88A373D61AC1D0F800BB7E59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88A373E11AC1D0F800BB7E59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88A373E51AC1D0F800BB7E59 /* libVKBLE_ios.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88A373D01AC1D0F800BB7E59 = {
+			isa = PBXGroup;
+			children = (
+				88A373DB1AC1D0F800BB7E59 /* VKBLE_ios */,
+				88A373E81AC1D0F800BB7E59 /* VKBLE_iosTests */,
+				88A373DA1AC1D0F800BB7E59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88A373DA1AC1D0F800BB7E59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88A373D91AC1D0F800BB7E59 /* libVKBLE_ios.a */,
+				88A373E41AC1D0F800BB7E59 /* VKBLE_iosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88A373DB1AC1D0F800BB7E59 /* VKBLE_ios */ = {
+			isa = PBXGroup;
+			children = (
+				88A373DC1AC1D0F800BB7E59 /* VKBLE_ios.h */,
+				88A373DE1AC1D0F800BB7E59 /* VKBLE_ios.m */,
+			);
+			path = VKBLE_ios;
+			sourceTree = "<group>";
+		};
+		88A373E81AC1D0F800BB7E59 /* VKBLE_iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				88A373E91AC1D0F800BB7E59 /* Supporting Files */,
+			);
+			path = VKBLE_iosTests;
+			sourceTree = "<group>";
+		};
+		88A373E91AC1D0F800BB7E59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				88A373EA1AC1D0F800BB7E59 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88A373D81AC1D0F800BB7E59 /* VKBLE_ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88A373ED1AC1D0F800BB7E59 /* Build configuration list for PBXNativeTarget "VKBLE_ios" */;
+			buildPhases = (
+				88A373D51AC1D0F800BB7E59 /* Sources */,
+				88A373D61AC1D0F800BB7E59 /* Frameworks */,
+				88A373D71AC1D0F800BB7E59 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VKBLE_ios;
+			productName = VKBLE_ios;
+			productReference = 88A373D91AC1D0F800BB7E59 /* libVKBLE_ios.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		88A373E31AC1D0F800BB7E59 /* VKBLE_iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88A373F01AC1D0F800BB7E59 /* Build configuration list for PBXNativeTarget "VKBLE_iosTests" */;
+			buildPhases = (
+				88A373E01AC1D0F800BB7E59 /* Sources */,
+				88A373E11AC1D0F800BB7E59 /* Frameworks */,
+				88A373E21AC1D0F800BB7E59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88A373E71AC1D0F800BB7E59 /* PBXTargetDependency */,
+			);
+			name = VKBLE_iosTests;
+			productName = VKBLE_iosTests;
+			productReference = 88A373E41AC1D0F800BB7E59 /* VKBLE_iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88A373D11AC1D0F800BB7E59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "viking warlock";
+				TargetAttributes = {
+					88A373D81AC1D0F800BB7E59 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					88A373E31AC1D0F800BB7E59 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 88A373D41AC1D0F800BB7E59 /* Build configuration list for PBXProject "VKBLE_ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 88A373D01AC1D0F800BB7E59;
+			productRefGroup = 88A373DA1AC1D0F800BB7E59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88A373D81AC1D0F800BB7E59 /* VKBLE_ios */,
+				88A373E31AC1D0F800BB7E59 /* VKBLE_iosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88A373E21AC1D0F800BB7E59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88A373D51AC1D0F800BB7E59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88A373DF1AC1D0F800BB7E59 /* VKBLE_ios.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88A373E01AC1D0F800BB7E59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88A373E71AC1D0F800BB7E59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88A373D81AC1D0F800BB7E59 /* VKBLE_ios */;
+			targetProxy = 88A373E61AC1D0F800BB7E59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		88A373EB1AC1D0F800BB7E59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		88A373EC1AC1D0F800BB7E59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88A373EE1AC1D0F800BB7E59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		88A373EF1AC1D0F800BB7E59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		88A373F11AC1D0F800BB7E59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VKBLE_iosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		88A373F21AC1D0F800BB7E59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = VKBLE_iosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88A373D41AC1D0F800BB7E59 /* Build configuration list for PBXProject "VKBLE_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88A373EB1AC1D0F800BB7E59 /* Debug */,
+				88A373EC1AC1D0F800BB7E59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88A373ED1AC1D0F800BB7E59 /* Build configuration list for PBXNativeTarget "VKBLE_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88A373EE1AC1D0F800BB7E59 /* Debug */,
+				88A373EF1AC1D0F800BB7E59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		88A373F01AC1D0F800BB7E59 /* Build configuration list for PBXNativeTarget "VKBLE_iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88A373F11AC1D0F800BB7E59 /* Debug */,
+				88A373F21AC1D0F800BB7E59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88A373D11AC1D0F800BB7E59 /* Project object */;
+}
