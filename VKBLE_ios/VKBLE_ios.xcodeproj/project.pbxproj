@@ -10,6 +10,9 @@
 		88A373DD1AC1D0F800BB7E59 /* VKBLE_ios.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 88A373DC1AC1D0F800BB7E59 /* VKBLE_ios.h */; };
 		88A373DF1AC1D0F800BB7E59 /* VKBLE_ios.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A373DE1AC1D0F800BB7E59 /* VKBLE_ios.m */; };
 		88A373E51AC1D0F800BB7E59 /* libVKBLE_ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A373D91AC1D0F800BB7E59 /* libVKBLE_ios.a */; };
+		88A373F41AC1D14200BB7E59 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A373F31AC1D14200BB7E59 /* CoreBluetooth.framework */; };
+		88A373F71AC1D16C00BB7E59 /* VKBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A373F61AC1D16C00BB7E59 /* VKBluetoothManager.m */; };
+		88A373FB1AC1D4F300BB7E59 /* VKPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A373FA1AC1D4F300BB7E59 /* VKPeripheral.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,12 @@
 		88A373DE1AC1D0F800BB7E59 /* VKBLE_ios.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VKBLE_ios.m; sourceTree = "<group>"; };
 		88A373E41AC1D0F800BB7E59 /* VKBLE_iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VKBLE_iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A373EA1AC1D0F800BB7E59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88A373F31AC1D14200BB7E59 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		88A373F51AC1D16C00BB7E59 /* VKBluetoothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKBluetoothManager.h; sourceTree = "<group>"; };
+		88A373F61AC1D16C00BB7E59 /* VKBluetoothManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKBluetoothManager.m; sourceTree = "<group>"; };
+		88A373F81AC1D18400BB7E59 /* VKBLE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VKBLE.h; sourceTree = "<group>"; };
+		88A373F91AC1D4F300BB7E59 /* VKPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKPeripheral.h; sourceTree = "<group>"; };
+		88A373FA1AC1D4F300BB7E59 /* VKPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKPeripheral.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88A373F41AC1D14200BB7E59 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +75,7 @@
 		88A373D01AC1D0F800BB7E59 = {
 			isa = PBXGroup;
 			children = (
+				88A373F31AC1D14200BB7E59 /* CoreBluetooth.framework */,
 				88A373DB1AC1D0F800BB7E59 /* VKBLE_ios */,
 				88A373E81AC1D0F800BB7E59 /* VKBLE_iosTests */,
 				88A373DA1AC1D0F800BB7E59 /* Products */,
@@ -85,6 +96,11 @@
 			children = (
 				88A373DC1AC1D0F800BB7E59 /* VKBLE_ios.h */,
 				88A373DE1AC1D0F800BB7E59 /* VKBLE_ios.m */,
+				88A373F51AC1D16C00BB7E59 /* VKBluetoothManager.h */,
+				88A373F61AC1D16C00BB7E59 /* VKBluetoothManager.m */,
+				88A373F81AC1D18400BB7E59 /* VKBLE.h */,
+				88A373F91AC1D4F300BB7E59 /* VKPeripheral.h */,
+				88A373FA1AC1D4F300BB7E59 /* VKPeripheral.m */,
 			);
 			path = VKBLE_ios;
 			sourceTree = "<group>";
@@ -194,6 +210,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				88A373DF1AC1D0F800BB7E59 /* VKBLE_ios.m in Sources */,
+				88A373F71AC1D16C00BB7E59 /* VKBluetoothManager.m in Sources */,
+				88A373FB1AC1D4F300BB7E59 /* VKPeripheral.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
