@@ -57,23 +57,6 @@ typedef NS_ENUM(NSInteger, VKBluetoothManagerScanningState)
  */
 -(void)VKBluetoothPeripheralDidDisconnect:(VKPeripheral *)peripheral AndErrorInformation:(NSError*)error;
 
-/*
- *Receive a notify message from a peripheral
- *从一个外设中收到通知的信息
- */
--(void)VKBluetoothPeripheralGotNotify:(VKPeripheral *)peripheral AndNotifyData:(NSData*)data;
-
-/*
- *Receive a notify message from a peripheral
- *从一个外设中收到通知的信息
- */
--(void)VKBluetoothPeripheralGotNotify:(VKPeripheral *)peripheral AndNotifyData:(NSData *)data FromCharactistic:(CBCharacteristic*)charactistic;
-
-/*
- *Receive a notify message from a peripheral
- *从一个外设中收到通知的信息
- */
--(void)VKBluetoothPeripheralGotNotify:(VKPeripheral *)peripheral AndNotifyData:(NSData *)data FromCharactistic:(CBCharacteristic *)charactistic AndBelongToService:(CBService*)service;
 
 /*
  *Did Discover a Peripheral. This will be invoked when you 

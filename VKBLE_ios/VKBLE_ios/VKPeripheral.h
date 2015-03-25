@@ -25,6 +25,31 @@
 
 @class VKPeripheral;
 
+@protocol VKPeripheralDelegate <NSObject>
+
+@required
+/*
+ *Receive a notify message from a peripheral
+ *从一个外设中收到通知的信息
+ */
+-(void)VKBluetoothPeripheralGotNotify:(VKPeripheral *)peripheral AndNotifyData:(NSData*)data;
+
+/*
+ *Receive a notify message from a peripheral
+ *从一个外设中收到通知的信息
+ */
+-(void)VKBluetoothPeripheralGotNotify:(VKPeripheral *)peripheral AndNotifyData:(NSData *)data FromCharactistic:(CBCharacteristic*)charactistic;
+
+/*
+ *Receive a notify message from a peripheral
+ *从一个外设中收到通知的信息
+ */
+-(void)VKBluetoothPeripheralGotNotify:(VKPeripheral *)peripheral AndNotifyData:(NSData *)data FromCharactistic:(CBCharacteristic *)charactistic AndBelongToService:(CBService*)service;
+
+
+@end
+
+
 typedef void(^VKBluetoothWriteResponse )(NSError *error , VKPeripheral* peripheral) ;
 
 NS_CLASS_AVAILABLE_IOS(7_0)
@@ -53,6 +78,8 @@ NS_CLASS_AVAILABLE_IOS(7_0)
  *Strength of the peripheral
  */
 @property (nonatomic,readonly) NSInteger SignalStrength;
+
+@property (nonatomic,weak) id<VKPeripheralDelegate> delegate;
 
 /**
  *Write Data Without Response

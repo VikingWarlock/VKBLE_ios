@@ -92,6 +92,15 @@
 -(void)peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error
 {
 
+    if ([self.delegate respondsToSelector:@selector(VKBluetoothPeripheralGotNotify:AndNotifyData:FromCharactistic:AndBelongToService:)]) {
+        [self.delegate VKBluetoothPeripheralGotNotify:self AndNotifyData:characteristic.value FromCharactistic:characteristic AndBelongToService:characteristic.service];
+    }else
+        if ([self.delegate respondsToSelector:@selector(VKBluetoothPeripheralGotNotify:AndNotifyData:FromCharactistic:)]) {
+            [self.delegate VKBluetoothPeripheralGotNotify:self AndNotifyData:characteristic.value FromCharactistic:characteristic];
+        }else
+            if ([self.delegate respondsToSelector:@selector(VKBluetoothPeripheralGotNotify:AndNotifyData:)]) {
+                [self.delegate VKBluetoothPeripheralGotNotify:self AndNotifyData:characteristic.value];
+            }
 }
 
 -(void)peripheral:(CBPeripheral *)peripheral didWriteValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error
