@@ -26,6 +26,10 @@
 #import <CoreBluetooth/CoreBluetooth.h>
 #import "VKPeripheral.h"
 
+typedef void(^FinishScanning)(NSArray *peripheralList , NSArray* AutoConnectList) ;
+
+
+@class VKBluetoothManager;
 
 @protocol VKBluetoothDelegate <NSObject>
 
@@ -34,7 +38,7 @@
  *The bluetooth service of your device change its state
  *手机蓝牙状态变更
  */
--(void)VKBluetoothStateChange:(CBCentralManagerState)BluetoothState;
+-(void)VKBluetoothStateChange:(CBCentralManagerState)BluetoothState ForVKBluetoothManager:(VKBluetoothManager*)manager;
 
 /*
  *A peripheral has connected with device
@@ -66,22 +70,47 @@
  */
 -(void)VKBluetoothPeripheralGotNotify:(VKPeripheral *)peripheral AndNotifyData:(NSData *)data FromCharactistic:(CBCharacteristic *)charactistic AndBelongToService:(CBService*)service;
 
+/*
+ *Did Discover a Peripheral. This will be invoked when you 
+ *use <code>startScanPeripheralOneByOneWithServices:</code>
+ *发现了一个外设设备
+ *使用<code>startScanPeripheralOneByOneWithServices:</code>时
+ *会调用这个方法
+ */
+-(void)VKBluetoothPeripheralDidDiscover:(VKPeripheral *)peripheral;
 
 @end
 
+NS_CLASS_AVAILABLE_IOS(7_0)
 @interface VKBluetoothManager : NSObject<CBCentralManagerDelegate,CBPeripheralDelegate,CBPeripheralManagerDelegate>
 
 
+@property(nonatomic,strong)CBCentralManager *centerManager;
+
+@property(nonatomic,weak) id<VKBluetoothDelegate>delegate;
+
+@property(nonatomic,strong,readonly)NSArray *peripheralList;
+
 /*
- *
+ *initialize the setting
  *
  *
  */
-+(void)setup;
++(void)setup NS_AVAILABLE_IOS(7_0);
 
-+(VKBluetoothManager*)sharedObject;
+-(id)init;
 
-+ (NSThread *)BluetoothRequestThread;
++(VKBluetoothManager*)sharedObject NS_AVAILABLE_IOS(7_0);
+
++ (NSThread *)BluetoothRequestThread NS_UNAVAILABLE;
+
++(void)startScanPeripheralOneByOneWithServices:(NSArray*)services NS_AVAILABLE_IOS(7_0);
++(void)stopScanningPeripheral;
+
+
++(void)startScanPeripheralsWithServices:(NSArray *)services WithTimeOut:(float)time AndTargetUUIDs:(NSArray*)uuids andDoneBlock:(FinishScanning)block NS_AVAILABLE_IOS(7_0);
+
++(void)startScanPeripheralsWithServices:(NSArray *)services WithTimeOut:(float)time andDoneBlock:(FinishScanning)block NS_AVAILABLE_IOS(7_0);
 
 
 
