@@ -28,6 +28,12 @@
 
 typedef void(^FinishScanning)(NSArray *peripheralList , NSArray* AutoConnectList) ;
 
+typedef NS_ENUM(NSInteger, VKBluetoothManagerScanningState)
+{
+    VKBluetoothManagerStateScanning = 0,
+    VKBluetoothManagerStateIdle
+};
+
 
 @class VKBluetoothManager;
 
@@ -82,14 +88,16 @@ typedef void(^FinishScanning)(NSArray *peripheralList , NSArray* AutoConnectList
 @end
 
 NS_CLASS_AVAILABLE_IOS(7_0)
-@interface VKBluetoothManager : NSObject<CBCentralManagerDelegate,CBPeripheralDelegate,CBPeripheralManagerDelegate>
+@interface VKBluetoothManager : NSObject<CBCentralManagerDelegate>
 
 
 @property(nonatomic,strong)CBCentralManager *centerManager;
 
 @property(nonatomic,weak) id<VKBluetoothDelegate>delegate;
 
-@property(nonatomic,strong,readonly)NSArray *peripheralList;
+@property(nonatomic,strong,readonly)NSArray *peripheralList NS_UNAVAILABLE;
+
+@property(nonatomic,readonly)VKBluetoothManagerScanningState ScanningState;
 
 /*
  *initialize the setting

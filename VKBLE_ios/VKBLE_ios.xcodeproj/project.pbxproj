@@ -16,6 +16,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		88419B971AC2E9B9005F4A79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88419B921AC2E9B8005F4A79 /* VKBLE_Example.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 88419B691AC2E9B8005F4A79;
+			remoteInfo = VKBLE_Example;
+		};
+		88419B991AC2E9B9005F4A79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88419B921AC2E9B8005F4A79 /* VKBLE_Example.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 88419B821AC2E9B8005F4A79;
+			remoteInfo = VKBLE_ExampleTests;
+		};
 		88A373E61AC1D0F800BB7E59 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 88A373D11AC1D0F800BB7E59 /* Project object */;
@@ -39,6 +53,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		88419B921AC2E9B8005F4A79 /* VKBLE_Example.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VKBLE_Example.xcodeproj; path = VKBLE_Example/VKBLE_Example.xcodeproj; sourceTree = SOURCE_ROOT; };
 		88A373D91AC1D0F800BB7E59 /* libVKBLE_ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVKBLE_ios.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A373DC1AC1D0F800BB7E59 /* VKBLE_ios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VKBLE_ios.h; sourceTree = "<group>"; };
 		88A373DE1AC1D0F800BB7E59 /* VKBLE_ios.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VKBLE_ios.m; sourceTree = "<group>"; };
@@ -72,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88419B931AC2E9B8005F4A79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88419B981AC2E9B9005F4A79 /* VKBLE_Example.app */,
+				88419B9A1AC2E9B9005F4A79 /* VKBLE_ExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		88A373D01AC1D0F800BB7E59 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +132,7 @@
 		88A373E81AC1D0F800BB7E59 /* VKBLE_iosTests */ = {
 			isa = PBXGroup;
 			children = (
+				88419B921AC2E9B8005F4A79 /* VKBLE_Example.xcodeproj */,
 				88A373E91AC1D0F800BB7E59 /* Supporting Files */,
 			);
 			path = VKBLE_iosTests;
@@ -186,6 +211,12 @@
 			mainGroup = 88A373D01AC1D0F800BB7E59;
 			productRefGroup = 88A373DA1AC1D0F800BB7E59 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 88419B931AC2E9B8005F4A79 /* Products */;
+					ProjectRef = 88419B921AC2E9B8005F4A79 /* VKBLE_Example.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				88A373D81AC1D0F800BB7E59 /* VKBLE_ios */,
@@ -193,6 +224,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		88419B981AC2E9B9005F4A79 /* VKBLE_Example.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = VKBLE_Example.app;
+			remoteRef = 88419B971AC2E9B9005F4A79 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		88419B9A1AC2E9B9005F4A79 /* VKBLE_ExampleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = VKBLE_ExampleTests.xctest;
+			remoteRef = 88419B991AC2E9B9005F4A79 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		88A373E21AC1D0F800BB7E59 /* Resources */ = {
@@ -374,6 +422,7 @@
 				88A373EF1AC1D0F800BB7E59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88A373F01AC1D0F800BB7E59 /* Build configuration list for PBXNativeTarget "VKBLE_iosTests" */ = {
 			isa = XCConfigurationList;
@@ -382,6 +431,7 @@
 				88A373F21AC1D0F800BB7E59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

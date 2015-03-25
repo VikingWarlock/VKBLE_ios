@@ -14,7 +14,7 @@
 typedef void(^VKBluetoothWriteResponse )(NSError *error , VKPeripheral* peripheral) ;
 
 NS_CLASS_AVAILABLE_IOS(7_0)
-@interface VKPeripheral : NSObject
+@interface VKPeripheral : NSObject<CBPeripheralDelegate>
 /**
  *Also provide the original peripheral if you want to do some operation directly
  */
